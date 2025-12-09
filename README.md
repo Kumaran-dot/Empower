@@ -122,3 +122,11 @@ Data encryption
 SOS audio/video upload
 
 Mobile app (Flutter / React Native)
+![image alt](https://github.com/Kumaran-dot/Empower/blob/main/WhatsApp%20Image%202025-12-09%20at%208.18.38%20PM.jpeg)
+![image alt](https://github.com/Kumaran-dot/Empower/blob/main/WhatsApp%20Image%202025-12-09%20at%208.10.50%20PM.jpeg)
+![image alt](https://github.com/Kumaran-dot/Empower/blob/main/WhatsApp%20Image%202025-12-09%20at%208.10.57%20PM.jpeg)
+![image alt](https://github.com/Kumaran-dot/Empower/blob/main/WhatsApp%20Image%202025-12-09%20at%208.10.30%20PM.jpeg)
+![image alt](https://github.com/Kumaran-dot/Empower/blob/main/WhatsApp%20Image%202025-12-09%20at%208.10.32%20PM.jpeg)
+![image alt](https://github.com/Kumaran-dot/Empower/blob/main/WhatsApp%20Image%202025-12-09%20at%208.10.42%20PM.jpeg)
+
+
