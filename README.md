@@ -20,9 +20,9 @@ Start/End Journey Controls
 
 WhatsApp Link Sharing (visible only after Start Journey)
 
-Location auto-updates without refreshing
+Auto-updating map without refresh
 
-Journey link becomes inactive after End Journey
+Journey deactivation after End Journey
 
 📁 Project Structure
 ProtectPath/
@@ -40,41 +40,40 @@ Firebase Realtime Database
 
 Google Maps JavaScript API
 
-WhatsApp API (Deep Link)
+WhatsApp Deep Link API
 
 Geolocation API
 
 ⚙️ How It Works
-
 1️⃣ tracker.html
 
 Requests GPS permission
 
 Sends live coordinates (lat, lng, timestamp) to Firebase
 
-Starts only when Start Journey is clicked
+Starts tracking only when Start Journey is clicked
 
-Shows “Send WhatsApp Link” button after journey starts
+Shows Send WhatsApp Link button after journey starts
 
-Stops updating when End Journey is clicked
+Stops sending updates when End Journey is clicked
 
 2️⃣ viewer.html
 
-Listens to the same Firebase path in real time
+Listens to the same Firebase node in real-time
 
-Automatically updates marker position
+Automatically updates the marker position
 
-No need to refresh the page
+No page refresh required
 
-Only works while journey is active
+Works only while active = true in Firebase
 
 🗂️ Firebase Database Structure
 {
   "journey": {
-      "active": true,
-      "lat": 11.3410,
-      "lng": 77.7172,
-      "timestamp": 1712492139
+    "active": true,
+    "lat": 11.3410,
+    "lng": 77.7172,
+    "timestamp": 1712492139
   }
 }
 
@@ -87,26 +86,30 @@ git clone https://github.com/your-username/ProtectPath.git
 Inside both tracker.html and viewer.html, update:
 
 const firebaseConfig = {
-   apiKey: "...",
-   authDomain: "...",
-   databaseURL: "...",
-   projectId: "...",
-   storageBucket: "...",
-   messagingSenderId: "...",
-   appId: "..."
+  apiKey: "...",
+  authDomain: "...",
+  databaseURL: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
 };
 
 3. Open tracker
-Open tracker.html in your phone → Click Start Journey
+
+Open tracker.html on your mobile
+
+Click Start Journey
 
 4. Share Live Link
 
 WhatsApp button appears
 
-Send the viewer link to your contacts
+Send the viewer link to contacts
 
 5. Open viewer
-viewer.html → Shows real-time moving location
+
+Open viewer.html → See live moving marker
 
 📌 Future Improvements
 
@@ -114,8 +117,8 @@ Multi-user tracking
 
 Journey history storage
 
-Encryption for sensitive data
+Data encryption
 
 SOS audio/video upload
 
-Mobile app version (Flutter / React Native)
+Mobile app (Flutter / React Native)
